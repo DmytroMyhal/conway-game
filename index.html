@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Conway Life</title>
+</head>
+<body>
+  <style>
+    #field {
+      margin: 30px;
+      border: 1px solid #000;
+      display: inline-block;
+      background: #000;
+    }
+    
+    .row {
+      display: block;
+	  font-size:0;
+    }
+    
+    .cell {
+      width: 5px;
+      height: 5px;
+      display: inline-block;
+      border-radius: 50%;
+    }
+    
+    .cell:hover {
+      background: #666;
+    }
+    
+    .cell.alive {
+      background: #fff;
+    }
+  </style>
+ 
+  <div id="field"></div>
+  <button id="start">start</button>
+  <button id="stop">stop</button>
+  <script src="conway.js"></script>
+</body>
+</html>
